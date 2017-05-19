@@ -12,7 +12,10 @@
   ],
   "author": "Kliment Mamykin",
   "license": "ISC",
-  "directories": ["lib", "src"],
+  "directories": [
+    "lib",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kmamykin/react-media-hoc.git"
@@ -20,5 +23,8 @@
   "scripts": {
     "compile": "rm -rf lib && babel --presets es2015 -d lib src",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
   }
 }
