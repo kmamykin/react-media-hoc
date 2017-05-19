@@ -17,8 +17,8 @@ const Demo = responsiveToMedia({
   portrait: '(orientation: portrait)',
   landscape: '(orientation: landscape)',
   mobile: { maxWidth: 599 },
-  tablet: { minWidth: 600, maxWidth: 1199 },
-  desktop: { minWidth: 1200 }
+  tablet: { minWidth: 600, maxWidth: 999 },
+  desktop: { minWidth: 1000 }
 })(DemoComponent)
 
 ReactDOM.render(<Demo/>, document.getElementById('demo'))

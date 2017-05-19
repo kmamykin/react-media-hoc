@@ -22,7 +22,7 @@ const initialState = (queries) => queries.reduce((state, query) => {
   return state
 }, {})
 
-const mediaSubscription = (mediaSpec) => {
+const createMediaSubscription = (mediaSpec) => {
   return {
     subscribe: (onMediaChange) => {
       const queries = createMediaQueries(mediaSpec)
@@ -37,7 +37,7 @@ const mediaSubscription = (mediaSpec) => {
 
 export default (mediaSpec) => (WrappedComponent) => {
 
-  const subscription = mediaSubscription(mediaSpec)
+  const subscription = createMediaSubscription(mediaSpec)
 
   class ResponsiveComponent extends React.Component {
 
