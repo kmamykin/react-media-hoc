@@ -1,0 +1,24 @@
+{
+  "name": "react-media-hoc",
+  "version": "0.1.0",
+  "description": "React HOC for media queries",
+  "main": "lib/index.js",
+  "keywords": [
+    "react",
+    "hoc",
+    "media",
+    "queries",
+    "matchMedia"
+  ],
+  "author": "Kliment Mamykin",
+  "license": "ISC",
+  "directories": ["lib", "src"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmamykin/react-media-hoc.git"
+  },
+  "scripts": {
+    "compile": "rm -rf lib && babel --presets es2015 -d lib src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
