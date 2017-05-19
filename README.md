@@ -36,6 +36,12 @@ const MyResponsiveComponent = ({portrait, mobile}) => (
 
 export default responsiveToMedia({
   portrait: '(orientation: portrait)',
-  mobile: '(min-width: 700px)'
+  mobile: { maxWidth: 300 }
 })(MyResponsiveComponent)
 ```
+`responsiveToMedia` call accepts an object with a list of media queries to monitor.
+The keys of the object denote the props that will be passed to wrapped component 
+(MyResponsiceComponent in the example above) and the value of those props will be a boolean 
+corresponding to the media query matching or not.
+
+The media query can be expressed as a string or as an object which will be parsed using [json2mq](https://github.com/akiran/json2mq).
