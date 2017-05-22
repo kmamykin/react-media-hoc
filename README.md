@@ -45,3 +45,8 @@ The keys of the object denote the props that will be passed to wrapped component
 corresponding to the media query matching or not.
 
 The media query can be expressed as a string or as an object which will be parsed using [json2mq](https://github.com/akiran/json2mq).
+
+Just FYI: it helps to add this meta tag to the head of your html:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
